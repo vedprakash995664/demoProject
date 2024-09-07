@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            /* background-color:#f0f0f0 ; */
+            background-image: url('img/w.avif');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .conatainer{
+            background-color: #ffff;  
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 10px 16px 20px 10px rgb(128, 51, 0)
+            
+        }
+        h1{
+            margin-bottom: 20px;
+        }
+        .input-container{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .input[type="text"]{
+            width: 65%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button{
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover{
+                background-color: #0056b3;
+            }
+        }
+        .weather-details{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body id="b">
+    <div class="conatainer">
+        <h1>Weather App</h1>
+        <div class="input-container">
+        <input type="text" id="city" placeholder="Enter City">
+        <button onclick="getWeather()">Get Weather</button>
+    </div>
+    <div id="weatherDetails" class="weather-details"></div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
